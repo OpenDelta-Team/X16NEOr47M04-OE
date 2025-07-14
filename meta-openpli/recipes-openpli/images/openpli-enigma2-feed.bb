@@ -63,6 +63,9 @@ OPTIONAL_PACKAGES += " \
 	astra-sm \
 	autofs \
 	autossh \
+	bluez-conf \
+	bluez-hidd \
+	btinit \
 	ccid \
 	cronie \
 	ctorrent \
@@ -123,6 +126,7 @@ OPTIONAL_PACKAGES += " \
 	${PYTHON_PN}-ipaddress \
 	${PYTHON_PN}-ntplib \
 	${PYTHON_PN}-pip \
+	${PYTHON_PN}-pexpect \
 	${PYTHON_PN}-requests \
 	${PYTHON_PN}-mechanize \
 	${PYTHON_PN}-lxml \
