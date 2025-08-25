@@ -3,12 +3,11 @@ MAINTAINER = "kiddac"
 require conf/license/license-gplv2.inc
 HOMEPAGE = "https://github.com/kiddac/Jedi-EPG-XStream"
 
-inherit gitpkgv allarch python3-compileall
+inherit gittag allarch python3-compileall
 
-SRCREV="${AUTOREV}"
+PV = "git"
+PKGV = "${GITPKGVTAG}"
 
-PV = "git${SRCPV}"
-PKGV = "git${GITPKGV}"
 
 SRC_URI = "git://github.com/kiddac/Jedi-EPG-XStream.git;protocol=https;branch=main"
 

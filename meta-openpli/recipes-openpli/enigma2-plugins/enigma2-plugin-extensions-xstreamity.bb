@@ -7,12 +7,12 @@ RDEPENDS_${PN} = "${PYTHON_PN} ${PYTHON_PN}-multiprocessing ${PYTHON_PN}-request
                   ${PYTHON_PN}-imaging ${PYTHON_PN}-pillow \
 "
 
-inherit gitpkgv allarch python3-compileall
+inherit gittag allarch python3-compileall
 
 SRCREV = "${AUTOREV}"
 
-PV = "git${SRCPV}"
-PKGV = "${GITPKGV}"
+PV = "git"
+PKGV = "${GITPKGVTAG}"
 
 SRC_URI = "git://github.com/kiddac/XStreamity.git;protocol=https"
 
