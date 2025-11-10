@@ -19,3 +19,5 @@ do_install:append() {
 }
 
 FILES:${PN} += "/etc/init.d/pcscd"
+
+RPROVIDES:${PN} += "libpcsclite1"
