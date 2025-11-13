@@ -11,8 +11,6 @@ RDEPENDS:${PN} = "\
 PV = "1.0+git"
 PKGV = "1.0+git${GITPKGV}"
 
-SRCREV = "${AUTOREV}"
-
 SRC_URI = "git://github.com/OpenViX/PlutoTV.git;protocol=https;branch=master"
 
 S="${WORKDIR}/git"
