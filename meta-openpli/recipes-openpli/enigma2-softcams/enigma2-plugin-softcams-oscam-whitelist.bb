@@ -12,7 +12,7 @@ S = "${WORKDIR}/git"
 
 DEPENDS = "enigma2-plugin-softcams-oscam"
 
-inherit allarch
+inherit allarch gitpkgv
 
 do_install () {
 	install -d ${D}${sysconfdir}/enigma2/
