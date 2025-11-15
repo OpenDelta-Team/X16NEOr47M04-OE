@@ -25,11 +25,11 @@ KERNEL_VERSION = "${@get_kernelversion_headers('${STAGING_KERNEL_DIR}') or oe.ut
 OPTIONAL_WIFI_PACKAGES = "\
 	${@ 'kernel-module-8812au'     if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
 	${@ 'kernel-module-8814au'     if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
-	${@ 'kernel-module-rt5572sta'  if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '4.8' ) < 0) else '' } \
+	${@ 'kernel-module-rt5572sta'  if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '4.11' ) < 0) else '' } \
 	${@ 'kernel-module-rt8188eu'   if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
 	${@ 'kernel-module-8188fu'     if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
 	${@ 'kernel-module-rt3573sta'  if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '4.11') < 0) else '' } \
-	${@ 'kernel-module-mt7601usta' if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '4.8' ) < 0) else '' } \
+	${@ 'kernel-module-mt7601usta' if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '4.11' ) < 0) else '' } \
 	${@ 'kernel-module-8723a'      if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
 	${@ 'kernel-module-8723bu'     if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
 	${@ 'kernel-module-mt7610u'    if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
