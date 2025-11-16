@@ -20,7 +20,7 @@ FILES:${PN}:append = "${sysconfdir}/Wireless"
 
 S = "${WORKDIR}/RT5572"
 
-EXTRA_OEMAKE = "LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR}"
+EXTRA_OEMAKE = 'LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR} KCFLAGS="-Wno-error=incompatible-pointer-types"'
 
 do_install() {
     install -d ${D}${nonarch_base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless
