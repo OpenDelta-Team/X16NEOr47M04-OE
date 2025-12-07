@@ -27,23 +27,14 @@ SRC_URI = " \
     file://av1_ordering_info.patch \
     file://vulkan_av1_stable_API.patch \
     file://vulkan_fix_gcc14.patch \
-    file://CVE-2023-49502.patch \
-    file://CVE-2024-31578.patch \
-    file://CVE-2024-31582.patch \
-    file://CVE-2023-50008.patch \
-    file://CVE-2023-49501.patch \
     file://CVE-2024-28661.patch \
-    file://CVE-2023-50007.patch \
     file://CVE-2023-49528.patch \
-    file://CVE-2024-35367.patch \
-    file://CVE-2024-35368.patch \
     file://CVE-2024-35365.patch \
     file://CVE-2024-36618.patch \
     file://CVE-2024-35369.patch \
     file://CVE-2025-25473.patch \
-    file://CVE-2025-22919.patch \
     file://CVE-2025-22921.patch \
-    file://CVE-2025-0518.patch \
+    file://CVE-2025-1594.patch \
     file://0001-fix-mpegts.patch \
     file://0002-rtsp.patch \
     file://0003-dxva2.patch \
@@ -56,7 +47,7 @@ SRC_URI = " \
     file://0013-add-av_stream_get_first_dts-for-chromium.patch \
 "
 
-SRC_URI[sha256sum] = "3b624649725ecdc565c903ca6643d41f33bd49239922e45c9b1442c63dca4e38"
+SRC_URI[sha256sum] = "bc5f1e4a4d283a6492354684ee1124129c52293bcfc6a9169193539fbece3487"
 
 # https://nvd.nist.gov/vuln/detail/CVE-2023-39018
 # https://github.com/bramp/ffmpeg-cli-wrapper/issues/291
@@ -68,6 +59,10 @@ CVE_STATUS[CVE-2023-39018] = "cpe-incorrect: This issue belongs to ffmpeg-cli-wr
 # Introduced: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/19f7dae81ab2c19643b97da7556383ee3f721e78
 # Fixed: https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/43be8d07281caca2e88bfd8ee2333633e1fb1a13
 CVE_STATUS[CVE-2025-1373]  = "fixed-version: Vulnerable code not present in any release"
+
+CVE_STATUS_GROUPS += "CVE_STATUS_FIXED_61x"
+CVE_STATUS_FIXED_61x = "CVE-2023-49502 CVE-2023-50007 CVE-2023-50008 CVE-2023-50009 CVE-2023-50010 CVE-2024-31578 CVE-2024-31582 CVE-2024-31585"
+CVE_STATUS_FIXED_61x[status] = "cpe-incorrect:these CVEs are fixed in 6.1.x"
 
 # Build fails when thumb is enabled: https://bugzilla.yoctoproject.org/show_bug.cgi?id=7717
 ARM_INSTRUCTION_SET:armv4 = "arm"
@@ -83,7 +78,7 @@ DEPENDS = "nasm-native"
 inherit autotools pkgconfig
 
 PACKAGECONFIG ??= "avdevice avfilter avcodec avformat swresample swscale postproc \
-                   alsa bzlib lzma theora zlib gpl \
+                   alsa bzlib gpl lzma theora x264 x265 zlib \
                    ${@bb.utils.contains('DISTRO_FEATURES', 'x11', 'xv xcb', '', d)} \
                    libass fdk-aac libbluray libdav1d libfreetype librtmp libvorbis \
                    mp3lame srt pulseaudio openjpeg openssl vpx libxml2 libv4l2 \
@@ -152,7 +147,6 @@ def cpu(d):
 
 EXTRA_OECONF = " \
 	--prefix=${prefix} \
-	--disable-static \
 	--disable-runtime-cpudetect \
 	--disable-ffplay \
 	--enable-ffprobe \
