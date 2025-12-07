@@ -9,6 +9,7 @@ SRC_URI:append = "file://001-rtmp-hls-tsdemux-fix.patch \
 "
 SRC_URI:remove = "file://CVE-2025-3887-1.patch \
                   file://CVE-2025-3887-2.patch \
+                  file://0005-v4l2codecs-Always-chain-up-to-parent-decide_allocati.patch \
 "
 PACKAGECONFIG = "${GSTREAMER_ORC} bz2 closedcaption curl dash dtls faac faad hls openssl opusparse \
                  rsvg rtmp sbc smoothstreaming sndfile ttml uvch264 webp \
