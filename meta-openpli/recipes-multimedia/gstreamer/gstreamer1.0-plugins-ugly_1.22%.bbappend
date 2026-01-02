@@ -1,8 +1,8 @@
 PACKAGECONFIG = "${GSTREAMER_ORC} a52dec mpeg2dec cdio" 
 
-PV = "1.26.8"
+PV = "1.26.10"
 
-SRC_URI[sha256sum] = "ed3c687290dd4d0cc1681f6fb3f59c57c8cfc765fa22eba16a7d09566cc5c7e1"
+SRC_URI[sha256sum] = "b2c648ef62cbf03cdc215f55dca01e2e8372983d8c88de3fa03671ddf08d7d14"
 
 PACKAGECONFIG[amrnb]    = ""
 PACKAGECONFIG[amrwb]    = ""
