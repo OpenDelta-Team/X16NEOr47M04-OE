@@ -624,6 +624,13 @@ elif [ "$MACHINE" = "gbtrio4k" ]; then
 		updateinfo "displaymodel" "UHD TRIO 4K PRO"
 		updateinfo "model" "gbtrio4kpro"
 		updateinfo "machinebuild" "gbtrio4kpro"
+	else
+		value=$(head -n 1 $WIFI1)
+		if [ "$value" != "0608" ]; then
+			updateinfo "displaymodel" "UHD TRIO 4K PRO"
+			updateinfo "model" "gbtrio4kpro"
+			updateinfo "machinebuild" "gbtrio4kpro"
+		fi
 	fi
 fi
 
