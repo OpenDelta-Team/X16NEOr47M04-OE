@@ -1,5 +1,5 @@
 require conf/license/openpli-gplv2.inc
-require softcam.oscam.inc
+require softcam.inc
 inherit gittag cmake
 
 DESCRIPTION = "${CAMTITLE}"
