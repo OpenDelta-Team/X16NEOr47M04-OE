@@ -1,5 +1,5 @@
 KV = "4.10.12"
-SRCDATE = "20240626"
+SRCDATE = "20250429"
 
 PROVIDES += "virtual/blindscan-dvbs"
 RPROVIDES:${PN} += "virtual-blindscan-dvbs"
