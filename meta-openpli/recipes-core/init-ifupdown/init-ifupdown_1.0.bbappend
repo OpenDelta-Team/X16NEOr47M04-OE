@@ -1,6 +1,7 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 # override the default interfaces config
 SRC_URI += " \
+          file://init \
           file://interfaces \
           "
