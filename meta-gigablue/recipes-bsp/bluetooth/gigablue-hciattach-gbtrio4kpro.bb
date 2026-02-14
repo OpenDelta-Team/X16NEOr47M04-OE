@@ -16,7 +16,7 @@ SRC_URI  = "http://downloads.openpli.org/archive/gigablue/gbtrio4kpro-hciattach-
             file://${INITSCRIPT_NAME} \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 FILES:${PN} += "${bindir} ${sysconfdir}"
 do_install() {

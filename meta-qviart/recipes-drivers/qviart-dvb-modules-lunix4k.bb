@@ -15,7 +15,7 @@ SRC_URI[sha256sum] = "089f7d31acf19164476880fbf1e54c3330956acca85c46da9dc107b624
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/bcmlinuxdvb_72604-${KV}-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

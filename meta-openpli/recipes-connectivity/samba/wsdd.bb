@@ -13,7 +13,7 @@ SRC_URI = " \
 
 PV = "1.08"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 TARGET_CC_ARCH += "${LDFLAGS}"
 

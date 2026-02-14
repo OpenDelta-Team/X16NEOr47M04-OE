@@ -8,7 +8,7 @@ VER ?= "${@bb.utils.contains('TARGET_ARCH', 'aarch64', '64' , '', d)}"
 
 SRC_URI = "http://downloads.openpli.org/archive/maxytec/${MACHINE}-libs${VER}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

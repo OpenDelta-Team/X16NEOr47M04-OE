@@ -8,7 +8,7 @@ SRC_URI = "http://downloads.openpli.org/archive/zgemma/ciplushelper-${HICHIPSET}
 	file://cicert.zip \
 	"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INITSCRIPT_NAME = "ciplushelper"
 INITSCRIPT_PARAMS = "defaults 50"

@@ -17,7 +17,7 @@ PV = "1.5"
 
 SRC_URI = "http://downloads.openpli.org/archive/edision/os-blindscan-utils-${PV}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 FILES:os-blindscan-dvbs-utils = "${bindir}/blindscan"
 FILES:os-blindscan-dvbc-utils = "${bindir}/tda1002x"

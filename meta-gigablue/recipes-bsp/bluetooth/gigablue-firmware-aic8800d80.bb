@@ -6,7 +6,7 @@ inherit allarch
 
 SRC_URI = "file://firmware-aic8800D80.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 PACKAGES = "${PN}"
 FILES:${PN} += "${nonarch_base_libdir}/firmware/aic8800D80"

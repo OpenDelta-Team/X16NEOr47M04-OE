@@ -10,7 +10,7 @@ SRC_URI = " \
        file://mmc-dev-mapping.sh \
        "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}${sysconfdir}/udev/rules.d

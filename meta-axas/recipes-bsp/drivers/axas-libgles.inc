@@ -14,7 +14,7 @@ PR = "r0"
 
 SRC_URI = "http://121.143.3.35/e4hd/libgles/${MACHINE}-libgles-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_configure() {
 }

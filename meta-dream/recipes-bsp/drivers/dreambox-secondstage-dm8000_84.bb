@@ -18,7 +18,7 @@ SRC_URI[sha256sum] = "b5dbfe00674e8dea38b5069b1bfde3fe6b4486d4c4556ac775b3127e84
 
 PACKAGES = "${PN}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
 	install -d ${D}/tmp

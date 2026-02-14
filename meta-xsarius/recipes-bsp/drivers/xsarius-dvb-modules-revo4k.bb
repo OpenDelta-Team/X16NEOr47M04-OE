@@ -17,7 +17,7 @@ SRCDATE = "20190502"
 
 SRC_URI = "http://downloads.openpli.org/archive/xsarius/bcmlinuxdvb_7252S-200mm-${KV}-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

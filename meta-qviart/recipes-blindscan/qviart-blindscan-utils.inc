@@ -13,7 +13,7 @@ PR = "r0"
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/qviart_blindscan_${SOC_FAMILY}.tar.xz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

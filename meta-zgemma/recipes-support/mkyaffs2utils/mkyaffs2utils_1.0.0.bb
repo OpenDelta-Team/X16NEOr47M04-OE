@@ -17,7 +17,7 @@ SRC_URI = " \
 INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
     cd mkyaffs2image && oe_runmake

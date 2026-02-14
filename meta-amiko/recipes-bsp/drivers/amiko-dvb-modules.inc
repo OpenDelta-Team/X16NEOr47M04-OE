@@ -8,7 +8,7 @@ PR = "r0"
 
 SRC_URI = "https://downloads.openpli.org/archive/amiko/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

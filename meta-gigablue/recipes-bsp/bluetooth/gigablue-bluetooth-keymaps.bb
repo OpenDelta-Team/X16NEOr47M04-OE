@@ -12,7 +12,7 @@ PR = "r1"
 
 SRC_URI  = "file://Vendor_0508_Product_0110.kl"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}/etc/keymap

@@ -17,7 +17,7 @@ SRC_URI = "file://qviart_blindscan"
 PV = "1.0"
 PR = "r0"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 FILES:qviart-blindscan-dvbs-utils = "${bindir}/*_blindscan"
 

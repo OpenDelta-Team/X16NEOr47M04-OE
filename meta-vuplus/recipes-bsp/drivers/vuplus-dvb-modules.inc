@@ -7,7 +7,7 @@ PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://downloads.openpli.org/archive/vuplus/vuplus-dvb-modules-${DOWNLOADMACHINE}-${KV}-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

@@ -14,4 +14,4 @@ SRC_URI = "http://downloads.openpli.org/archive/gi/vmlinuz-initrd-${MACHINE}-${S
 
 FILES:${PN} = "/boot"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"

@@ -8,7 +8,7 @@ PV = "${KV}-${SRCDATE}"
 
 SRC_URI = "http://downloads.openpli.org/archive/zgemma/${MACHINE}-drivers${VER}-${PV}.zip;name=${ARCH}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

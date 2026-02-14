@@ -15,7 +15,7 @@ PR = "r0"
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/hisi3798mv200-libreader-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
 }

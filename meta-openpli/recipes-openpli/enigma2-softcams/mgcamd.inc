@@ -6,7 +6,7 @@ SRC_URI = " \
 
 CAMNAME = "mgcamd${MGCAMVER}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 require mgcamd-softcam.inc
 

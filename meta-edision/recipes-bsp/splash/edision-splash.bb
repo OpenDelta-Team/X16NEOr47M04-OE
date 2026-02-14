@@ -9,7 +9,7 @@ inherit deploy
 
 PR = "r0"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 SRC_URI = "file://splash.bin"
 

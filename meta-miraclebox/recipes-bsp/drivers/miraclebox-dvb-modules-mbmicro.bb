@@ -14,7 +14,7 @@ SRC_URI[sha256sum] = "cf0879ae33b11a6d1ec5e49328e0bd5843f957fee3bba7dc6075ba0111
 
 SRC_URI = "http://downloads.openpli.org/archive/miraclebox/ceryon-7000s-dvbdrive-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

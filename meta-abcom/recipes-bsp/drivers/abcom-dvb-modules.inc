@@ -8,7 +8,7 @@ PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://downloads.openpli.org/archive/abcom/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

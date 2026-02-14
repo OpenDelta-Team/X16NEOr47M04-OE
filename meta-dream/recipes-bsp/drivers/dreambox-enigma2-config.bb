@@ -13,7 +13,7 @@ SRC_URI = "file://skin_box.xml file://LICENSE"
 PACKAGES = "${PN}"
 FILES:${PN} = "/usr/share/enigma2"
 PACKAGE_ARCH = "all"
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
 	install -d ${D}/usr/share/enigma2

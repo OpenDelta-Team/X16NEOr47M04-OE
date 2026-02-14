@@ -11,7 +11,7 @@ RPROVIDES:${PN} = "libnxpl.so libnexus.so libnxclient.so libv3ddriver.so libEGL.
 
 SRC_URI = "http://downloads.openpli.org/archives/gi/sf4008-v3ddriver-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_configure() {
 }

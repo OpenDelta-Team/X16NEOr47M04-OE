@@ -12,7 +12,7 @@ PR = "r2"
 
 SRC_URI = "http://downloads.openpli.org/archive/gigablue/${MACHINE_DRIVER}-v3ddriver-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_configure() {
 }

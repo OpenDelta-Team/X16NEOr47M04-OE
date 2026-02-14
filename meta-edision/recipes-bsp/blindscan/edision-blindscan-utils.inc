@@ -13,7 +13,7 @@ RPROVIDES:edision-blindscan-dvbc-utils-${MACHINE} += "virtual-blindscan-dvbc"
 
 SRC_URI = "http://downloads.openpli.org/archive/edision/edision-blindscan-utils-${PV}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 BLINDSCANARCH ?= ""
 BLINDSCANARCH:arm = "arm-linux-gnueabihf"
 BLINDSCANARCH:aarch64 = "aarch64-linux-gnu"

@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE}"
 PV = "1.0"
 PR = "r1"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
 }

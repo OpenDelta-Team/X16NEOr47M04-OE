@@ -10,7 +10,7 @@ PV = "1.1"
 PR = "20170105.r0"
 SRC_URI = "file://webkit-hbbtv-plugin_20170105.r0.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install:append() {
     install -d ${D}/usr/bin

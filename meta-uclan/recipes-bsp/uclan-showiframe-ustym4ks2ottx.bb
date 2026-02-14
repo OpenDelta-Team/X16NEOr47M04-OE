@@ -17,7 +17,7 @@ RCONFLICTS:${PN} = "showiframe"
 
 SRC_URI = "http://downloads.openpli.org/archive/uclan/${SOC_FAMILY}-showiframe-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}${bindir}

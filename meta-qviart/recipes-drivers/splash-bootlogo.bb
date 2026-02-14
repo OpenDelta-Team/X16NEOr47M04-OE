@@ -9,7 +9,7 @@ COMPATIBLE_MACHINE = "lunix|lunixco|lunix4k|lunix3_4k"
 PV = "1.0"
 PR = "r0"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 SRC_URI:append:lunix3-4k = "file://lunix3-4k_splash.bmp"
 SRC_URI:append:lunix4k = "file://lunix4k_splash.bmp"

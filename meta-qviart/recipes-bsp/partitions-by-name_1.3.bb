@@ -11,7 +11,7 @@ INITSCRIPT_PARAMS = "start 04 S ."
 
 inherit update-rc.d
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
 	install -d ${D}${sysconfdir}/init.d

@@ -15,7 +15,7 @@ SRC_URI[sha256sum] = "c9d2a44500f2ca8d6ed8ecde45c8a62cbd8933e0c798fe12f11d01dfc8
 
 SRC_URI = "http://downloads.openpli.org/archive/xsarius/bcmlinuxdvb_73625-${KV}-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

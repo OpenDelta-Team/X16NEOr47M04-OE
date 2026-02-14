@@ -16,7 +16,7 @@ SRC_URI  = "file://deepsleep \
     file://suspend.sh \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}${bindir}

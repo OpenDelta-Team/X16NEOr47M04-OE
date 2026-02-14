@@ -10,7 +10,7 @@ SRC_URI[ppanel.sha256sum] = "bd4e0b2b088a4a977d431ae1bb85fae142020f7b6f88baba06f
 
 CAMNAME = "CCcam${CCCAMVER}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 require softcam.inc
 

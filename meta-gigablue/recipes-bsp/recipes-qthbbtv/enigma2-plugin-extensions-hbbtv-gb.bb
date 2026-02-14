@@ -22,7 +22,7 @@ SRC_URI += " \
 RDEPENDS:${PN}  = "qtwebkit virtual-libgles2"
 RDEPENDS:${PN} += "gb-v3ddriver-${MACHINE_DRIVER}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 PLUGINPATH = "${libdir}/enigma2/python/Plugins/Extensions/HbbTV"
 

@@ -7,7 +7,7 @@ PR = "${SRCDATE}.${SRCDATE_PR}"
 
 SRC_URI = "http://downloads.openpli.org/archive/vuplus/vuplus-dvb-proxy-${MACHINE}-${PV}-${PR}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 #inherit module-base
 DEPENDS = "virtual/kernel"

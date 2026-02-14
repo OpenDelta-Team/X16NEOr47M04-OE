@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 
 PV = "${KV}+${SRCDATE}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

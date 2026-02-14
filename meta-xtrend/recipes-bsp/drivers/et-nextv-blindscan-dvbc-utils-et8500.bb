@@ -13,7 +13,7 @@ RPROVIDES:${PN} += "virtual-blindscan-dvbc"
 PV = "1.6"
 PR = "r2"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
 }

@@ -7,7 +7,7 @@ PV = "${KV}-${SRCDATE}"
 
 SRC_URI = "http://downloads.openpli.org/archive/axas/${MACHINE}-drivers-${PV}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

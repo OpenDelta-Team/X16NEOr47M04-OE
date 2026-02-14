@@ -15,7 +15,7 @@ SRC_URI = "file://Makefile \
            file://COPYING \
           "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 KV = "${PREFERRED_VERSION_linux-qviart}"
 
 # The inherit of module.bbclass will automatically name module packages with

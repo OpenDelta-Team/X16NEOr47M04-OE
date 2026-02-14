@@ -15,7 +15,7 @@ SRC_URI = "http://downloads.openpli.org/archive/sab/broadmedia-dvbc-blindscan-1.
 PV = "1.0"
 PR = "r0"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
 }

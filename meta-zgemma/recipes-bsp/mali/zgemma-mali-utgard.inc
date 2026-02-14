@@ -12,7 +12,7 @@ RPROVIDES:${PN} = "libMali.so libmali.so libEGL.so.1.4 libEGL.so.1 libEGL.so lib
 
 SRC_URI = "http://downloads.openpli.org/archive/zgemma/zgemma-mali${VER}-${HICHIPSET}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 # The driver is a set of binary libraries to install
 # there's nothing to configure or compile

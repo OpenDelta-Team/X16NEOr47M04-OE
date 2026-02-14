@@ -11,7 +11,7 @@ RPROVIDES:${PN} = "libmali.so libMali.so libEGL.so.1.4 libEGL.so.1 libEGL.so lib
 
 SRC_URI = "http://downloads.openpli.org/archive/gfutures/${MACHINE}-mali${VER}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 # The driver is a set of binary libraries to install
 # there's nothing to configure or compile

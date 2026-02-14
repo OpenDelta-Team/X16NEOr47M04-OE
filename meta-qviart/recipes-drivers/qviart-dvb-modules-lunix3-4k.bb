@@ -19,7 +19,7 @@ SRC_URI[sha256sum] = "fe8fbe9084cc82a517226f99f736ad874269478ce52c13e6988bbd2213
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/bcmlinuxdvb_7252S-300mm-${KV}-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

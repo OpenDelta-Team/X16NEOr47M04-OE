@@ -35,6 +35,6 @@ do_deploy() {
 
 SRC_URI = "http://downloads.openpli.org/archive/gigablue/initrd_${MACHINE}_${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 addtask deploy before do_build after do_install

@@ -21,7 +21,7 @@ SRC_URI  = "http://downloads.openpli.org/archive/octagon/${MACHINE}-hihalt-${SRC
     file://standby_enter.sh \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}${bindir}

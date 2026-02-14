@@ -15,7 +15,7 @@ PR = "r0"
 
 SRC_URI = "http://downloads.openpli.org/archive/sab/alphatriple-drivers-${KV}-${GCCREV}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"

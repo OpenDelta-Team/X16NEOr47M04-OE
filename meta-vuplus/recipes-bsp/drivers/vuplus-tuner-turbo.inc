@@ -29,7 +29,7 @@ SRC_URI:arm = " \
     http://downloads.openpli.org/archive/vuplus/vuplus_tuner_turbo_bin_fw_${TARGET_ARCH}_${FW_SRCDATE}.tar.gz;name=binfw_arm \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 inherit module-base
 

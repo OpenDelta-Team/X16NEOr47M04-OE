@@ -3,7 +3,7 @@ LICENSE = "CLOSED"
 
 SRC_URI = "file://buildimage.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install () {
         install -d ${D}/${sbindir}

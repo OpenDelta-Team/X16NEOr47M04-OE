@@ -22,7 +22,7 @@ RRECOMMENDS:${PN} = " \
     kernel-module-dvb-usb-cypress-firmware \
     "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 inherit module-base
 

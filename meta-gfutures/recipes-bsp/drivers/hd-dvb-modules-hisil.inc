@@ -8,7 +8,7 @@ PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://downloads.openpli.org/archive/gfutures/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INITSCRIPT_NAME = "suspend"
 INITSCRIPT_PARAMS = "start 89 0 ."

@@ -10,7 +10,7 @@ RDEPENDS:${PN} += "spycat-firmware-mn8847x"
 
 SRC_URI = "http://downloads.openpli.org/archive/spycat/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 

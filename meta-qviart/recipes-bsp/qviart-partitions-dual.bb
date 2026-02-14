@@ -9,7 +9,7 @@ inherit deploy
 
 SRCDATE = "20220915"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/dags-partitions-${MACHINE}_${SRCDATE}.tar.gz \
         file://flash-updater"

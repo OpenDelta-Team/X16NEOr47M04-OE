@@ -8,7 +8,7 @@ PR = "r1"
 
 SRC_URI = "file://buildimage.tar.gz"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 inherit autotools
 

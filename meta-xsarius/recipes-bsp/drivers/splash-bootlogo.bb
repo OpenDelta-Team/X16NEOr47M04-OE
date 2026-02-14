@@ -9,7 +9,7 @@ require conf/license/openpli-gplv2.inc
 PV = "1.0"
 PR = "r0"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 SRC_URI = " \
 	${@bb.utils.contains("CHIPSET", "bcm7439", "file://${MACHINE}_splash.bmp", "file://${MACHINE}_splash.bmp file://${MACHINE}_splash1.bmp file://${MACHINE}_splash2.bmp file://${MACHINE}_splash3.bmp", d)} \

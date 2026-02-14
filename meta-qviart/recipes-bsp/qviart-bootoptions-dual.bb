@@ -8,7 +8,7 @@ PR = "20210223"
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/dags-bootoptions-${PR}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
 }

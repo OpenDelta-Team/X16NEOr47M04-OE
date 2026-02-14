@@ -9,7 +9,7 @@ inherit deploy
 
 SRC_URI = "http://downloads.openpli.org/archive/zgemma/zgemma-recovery-${HICHIPSET}-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 ALLOW_EMPTY:${PN} = "1"
 do_configure[nostamp] = "1"

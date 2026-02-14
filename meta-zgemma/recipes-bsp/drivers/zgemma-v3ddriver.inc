@@ -12,7 +12,7 @@ RPROVIDES:${PN} = "libnxpl.so libnexus.so libv3ddriver.so libEGL.so.1.4 libEGL.s
 
 SRC_URI = "http://downloads.openpli.org/archive/zgemma/${MACHINE}-v3ddrivers-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 # The driver is a set of binary libraries to install
 # there's nothing to configure or compile

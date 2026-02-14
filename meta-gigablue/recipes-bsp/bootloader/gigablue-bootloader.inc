@@ -9,7 +9,7 @@ require conf/license/license-gplv2.inc
 
 SRC_URI = "http://downloads.openpli.org/archive/gigablue/initrd_${MACHINE}_${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 PV = "${BOLT_VERSION}-${BOLT_DATE}"
 PR = "r1"

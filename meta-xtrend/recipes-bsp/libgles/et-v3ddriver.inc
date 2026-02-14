@@ -11,7 +11,7 @@ RPROVIDES:${PN} = "libnxpl.so libnexus.so libv3ddriver.so libEGL.so.1.4 libEGL.s
 
 SRC_URI = "http://downloads.openpli.org/archive/xtrend/${MACHINE}-v3ddriver-${SRCDATE}.zip"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_configure() {
 }

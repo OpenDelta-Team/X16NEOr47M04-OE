@@ -12,7 +12,7 @@ SRC_URI = " \
 	http://downloads.openpli.org/archive/xtrend/${MACHINE}/avrmain-${MACHINE}-${PV}.zip;name=avrmain \
 	"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 inherit update-rc.d
 
