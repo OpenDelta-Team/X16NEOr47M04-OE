@@ -9,7 +9,7 @@ SRC_URI = "git://github.com/atvcaptain/dpf-ax.git;branch=dreamlayers;protocol=ht
          file://set-python-version-to-312.patch \
 "
 
-inherit pkgconfig gitpkgv autotools-brokensep python3native
+inherit pkgconfig gitpkgv python3native
 
 SRCREV = "${AUTOREV}"
 PV = "4.0.+git"
