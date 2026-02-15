@@ -28,3 +28,5 @@ do_install() {
 }
 
 FILES:${PN} = "${PYTHON_SITEPACKAGES_DIR}/pngutil"
+
+ERROR_QA:remove = "buildpaths"
