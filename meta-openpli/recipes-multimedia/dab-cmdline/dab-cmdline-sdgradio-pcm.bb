@@ -13,14 +13,14 @@ PKGV = "1.3+git${GITPKGV}"
 
 SRC_URI = "git://github.com/satdreamgr/dab-cmdline.git;protocol=https;branch=sdgradio"
 
-EXTRA_OECMAKE = "-DRTLSDR=ON -DCMAKE_INSTALL_PREFIX=/usr/bin"
+EXTRA_OECMAKE = "-DRTLSDR=ON -DCMAKE_INSTALL_PREFIX=/usr/bin -DCMAKE_POLICY_VERSION_MINIMUM=3.5"
 
-S = "${UNPACKDIR}/git/sdgradio"
+S = "${UNPACKDIR}/${PN}-${PV}/sdgradio"
 
 inherit cmake pkgconfig
 
 do_configure:prepend() {
-	sed -i -e 's:librtlsdr.so:librtlsdr.so.0:g' ${WORKDIR}/git/devices/rtlsdr-handler/rtlsdr-handler.cpp
+	sed -i -e 's:librtlsdr.so:librtlsdr.so.0:g' ${UNPACKDIR}/${PN}-${PV}/devices/rtlsdr-handler/rtlsdr-handler.cpp
 }
 
 do_install:append() {
