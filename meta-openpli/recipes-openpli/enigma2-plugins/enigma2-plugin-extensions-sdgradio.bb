@@ -14,4 +14,4 @@ PR = "r1"
 
 inherit setuptools3-openplugins python3-compileall
 
-RDEPENDS:${PN} = "python3-core rtl-sdr redsea dab-cmdline-sdgradio dab-cmdline-sdgradio-pcm dab-cmdline-sdgradio-wav"
+# RDEPENDS:${PN} = "python3-core rtl-sdr redsea dab-cmdline-sdgradio dab-cmdline-sdgradio-pcm dab-cmdline-sdgradio-wav"

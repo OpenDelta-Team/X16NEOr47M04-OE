@@ -5,12 +5,10 @@ require conf/license/license-gplv2.inc
 
 RRECOMMENDS:${PN} = " \
 	ffmpeg \
-	exteplayer3 \
 	gstplayer \
 	wget \
 	hlsdl \
 	lsdir \
-	f4mdump \
 	gst-ifdsrc \
 	iptvsubparser \
 	rtmpdump \

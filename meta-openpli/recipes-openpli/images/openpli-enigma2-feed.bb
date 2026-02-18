@@ -67,17 +67,14 @@ OPTIONAL_PACKAGES += " \
 	cronie \
 	ctorrent \
 	cups \
-	davfs2 \
 	diffutils \
 	dosfstools \
 	dvb-apps \
 	dvblast \
-	dvbsnoop \
 	dvdfs \
 	edid-decode \
 	evtest \
 	exfatprogs \
-	exteplayer3 \
 	gdb \
 	gerbera \
 	grep \
@@ -85,7 +82,6 @@ OPTIONAL_PACKAGES += " \
 	hddtemp \
 	hdparm \
 	htop \
-	inadyn-mt \
 	inetutils \
 	inotify-tools \
 	iperf3 \
@@ -94,7 +90,6 @@ OPTIONAL_PACKAGES += " \
 	joe \
 	less \
 	libbluray \
-	libsdl2 \
 	libudfread \
 	mc \
 	mediainfo \
@@ -118,7 +113,6 @@ OPTIONAL_PACKAGES += " \
 	parted \
 	procps \
 	pyload \
-	python3-daap \
 	python3-ipaddress \
 	python3-ntplib \
 	python3-pip \
@@ -171,8 +165,6 @@ OPTIONAL_PACKAGES += " \
 	v4l-utils \
 	vim \
 	wget \
-	wscan \
-	yafc \
 	zeroconf \
 	zerotier \
 	zip \
@@ -226,14 +218,12 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-xklass \
 	enigma2-plugin-extensions-youtube \
 	enigma2-plugin-systemplugins-m3uiptv \
-	enigma2-plugin-systemplugins-crossepg \
 	enigma2-plugin-systemplugins-devicemanager \
 	enigma2-plugin-systemplugins-extnumberzap \
 	enigma2-plugin-systemplugins-extrafancontrol \
 	enigma2-plugin-systemplugins-hrtunerproxy \
 	enigma2-plugin-systemplugins-m3uiptv \
 	enigma2-plugin-systemplugins-mountmanager \
-	enigma2-plugin-systemplugins-radiotimesxmltvemulator \
 	enigma2-plugin-systemplugins-serviceapp \
 	enigma2-plugin-systemplugins-signalfinder \
 	enigma2-plugin-systemplugins-satipserver \
@@ -260,7 +250,6 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	${@bb.utils.contains('EXTRA_IMAGEDEPENDS', 'vuplus-tuner-turbo2', 'enigma2-plugin-drivers-dvb-usb-turbo2', '', d)} \
 	\
 	${@bb.utils.contains("MACHINE_FEATURES", "transcoding", "streamproxy", "", d)} \
-	libcrypto-compat \
 	libxcrypt-compat \
 	dvb-usb-drivers-meta \
 	cdtextinfo \
