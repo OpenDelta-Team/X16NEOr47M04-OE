@@ -1,10 +1,3 @@
-FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
-
-SRC_URI:append = " \
-        file://init \
-        file://service \
-        file://config \
-"
 
 do_install:prepend() {
     install -d ${D}${sysconfdir}/default
