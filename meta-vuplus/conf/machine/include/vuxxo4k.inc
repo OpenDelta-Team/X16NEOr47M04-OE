@@ -6,17 +6,19 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	gstreamer1.0-libav \
 "
 
-KERNEL_MODULE_AUTOLOAD += "xfs"
+KERNEL_MODULE_AUTOLOAD += "xfs zram zsmalloc"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
 	vuplus-shutdown \
 	gst-plugin-dvbmediasink \
 	ntfs-3g \
+	zram \
 "
 
 MACHINE_EXTRA_RDEPENDS += "\
 	kernel-module-sr-mod \
         vuplus-kexec \
+        kernel-module-zram kernel-module-zsmalloc \
 "
 
 EXTRA_IMAGEDEPENDS += "\
