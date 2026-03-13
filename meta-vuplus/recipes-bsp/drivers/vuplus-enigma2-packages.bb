@@ -15,7 +15,7 @@ PKGV = "experimental-git${GITPKGV}"
 PR = "r6"
 BRANCH = "vuplus_experimental"
 
-SRC_URI = "git://code.vuplus.com/git/dvbapp.git;protocol=http;branch=${BRANCH};tag=${SRCREV} \
+SRC_URI = "git://code.vuplus.com/git/dvbapp.git;protocol=http;branch=${BRANCH} \
 	file://0001-fix-compile-python3.patch \
 	file://0002-fix-type-error-crash.patch \
 	file://0003-fix-import.patch \
