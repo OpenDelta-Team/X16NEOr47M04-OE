@@ -65,6 +65,8 @@ S = "${UNPACKDIR}/media_build-bst-14"
 
 EXTRA_OEMAKE = "LINUX_SRC=${STAGING_KERNEL_DIR} OUTDIR=${STAGING_KERNEL_BUILDDIR}"
 
+export KCFLAGS += "-std=gnu17"
+
 do_configure:prepend() {
 	CUR=`pwd`
 	cp ${UNPACKDIR}/sit2_op.o_${SRCDATE_BIN}_arm ${S}/v4l/sit2_op.o
