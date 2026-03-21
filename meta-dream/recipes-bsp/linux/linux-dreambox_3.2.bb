@@ -1,4 +1,4 @@
-MACHINE_KERNEL_PR:append = ".${INC_PR}.92"
+MACHINE_KERNEL_PR:append = ".${INC_PR}.93"
 
 COMPATIBLE_MACHINE = "dm8000"
 
@@ -45,6 +45,7 @@ SRC_URI = " \
 			file://035-tbs.patch \
 			file://036-suppress-array-bounds-error.patch \
 			file://037-port-to-c23.patch \
+			file://038-cast-to-unsigned-int.patch \
 			file://defconfig \
 "
 
@@ -57,6 +58,6 @@ SRC_URI[unionfs.sha256sum] = "c0c449a445e9e07c5b1ba8e8c40013c0e40a5948c30a719067
 
 require linux-dreambox.inc
 
-export KCFLAGS += "-Wno-error=incompatible-pointer-types -Wno-error=int-conversion"
+export KCFLAGS += "-Wno-error=incompatible-pointer-types"
 
 S = "${UNPACKDIR}/linux-3.2"
