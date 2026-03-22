@@ -31,6 +31,7 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KSRC_VER}.tar
 	file://0019-fix-build-binutils241.patch \
 	file://fix-linker-issue-undefined-reference.patch \
 	file://kernel-add-support-for-gcc15.patch \
+	file://port-to-c23.patch \
 	file://defconfig \
 	"
 
@@ -43,8 +44,6 @@ KERNEL_IMAGETYPE = "zImage"
 KERNEL_OUTPUT = "arch/${ARCH}/boot/${KERNEL_IMAGETYPE}"
 KERNEL_OBJECT_SUFFIX = "ko"
 KERNEL_IMAGEDEST = "tmp"
-
-export KCFLAGS = "-std=gnu17"
 
 FILES:${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/zImage"
 
