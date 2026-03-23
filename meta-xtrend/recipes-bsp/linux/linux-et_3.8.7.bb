@@ -61,6 +61,7 @@ SRC_URI = "http://downloads.openpli.org/archive/xtrend/linux-${PV}-${ARCH}.tar.g
 	file://fix-build-with-binutils3-2.41.patch \
 	file://kernel-add-support-for-gcc15.patch \
 	file://port-to-c23.patch \
+	file://fix-int-conversion-without-casting.patch \
 	"
 
 S = "${UNPACKDIR}/linux-${PV}"
