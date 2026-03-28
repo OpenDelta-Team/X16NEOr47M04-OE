@@ -23,6 +23,7 @@ SRC_URI += "http://downloads.openpli.org/archive/gfutures/linux-${PV}-${ARCH}.ta
 	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
 	file://fix-build-with-binutils-2.41.patch \
 	file://noforce_correct_pointer_usage.patch \
+	file://port-to-c23.patch \
 "
 SRC_URI:append:arm = " \
 	file://findkerneldevice.sh \
