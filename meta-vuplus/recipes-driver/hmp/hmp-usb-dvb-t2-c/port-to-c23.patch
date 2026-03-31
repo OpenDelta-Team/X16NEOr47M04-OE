@@ -1,0 +1,20 @@
+diff --git a/v4l/compat.h b/v4l/compat.h
+index 9e29521..fe9bb42 100644
+--- a/v4l/compat.h
++++ b/v4l/compat.h
+@@ -291,15 +291,6 @@ static inline int strict_strtoul(const char *cp, unsigned int base, valtype *res
+ )
+ #endif
+ 
+-#ifdef NEED_BOOL_TYPE
+-/* bool type and enum-based definition of true and false was added in 2.6.19 */
+-typedef int bool;
+-enum {
+-	false   = 0,
+-	true    = 1
+-};
+-#endif
+-
+ #if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,22)
+ #define sony_pic_camera_command(a,b) sonypi_camera_command(a,b)
+

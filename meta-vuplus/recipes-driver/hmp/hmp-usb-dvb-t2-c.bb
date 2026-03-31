@@ -54,6 +54,7 @@ SRC_URI = "file://media_build-bst-14-${SRCDATE}.tar.gz \
            file://vu_adapter_adjustment.patch \
            file://vu_keep_compatibility.patch \
            file://vu_no_v4l_firmwares_install.patch \
+           file://port-to-c23.patch \
            file://defconfig \
            file://sit2_op.o_${SRCDATE} \
 "
