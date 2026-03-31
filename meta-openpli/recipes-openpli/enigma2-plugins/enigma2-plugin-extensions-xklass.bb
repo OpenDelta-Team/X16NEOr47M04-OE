@@ -9,8 +9,6 @@ RDEPENDS_${PN} = "${PYTHON_PN} ${PYTHON_PN}-multiprocessing ${PYTHON_PN}-request
 
 inherit gitpkgv allarch python3-compileall
 
-SRCREV = "${AUTOREV}"
-
 PV = "git${SRCPV}"
 PKGV = "${GITPKGV}"
 
