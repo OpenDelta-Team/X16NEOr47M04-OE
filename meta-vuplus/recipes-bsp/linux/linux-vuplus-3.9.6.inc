@@ -31,6 +31,7 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KV}.tar.bz2 \
 	file://makefile-silence-warnings.patch \
 	file://kernel-add-support-for-gcc15.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://port-to-c23.patch \
 	file://defconfig \
 	"
 
