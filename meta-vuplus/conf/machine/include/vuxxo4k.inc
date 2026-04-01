@@ -16,7 +16,6 @@ MACHINE_EXTRA_RRECOMMENDS = " \
 
 MACHINE_EXTRA_RDEPENDS += "\
 	kernel-module-sr-mod \
-        vuplus-kexec \
 "
 
 EXTRA_IMAGEDEPENDS += "\
