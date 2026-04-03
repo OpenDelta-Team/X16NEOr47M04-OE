@@ -11,7 +11,7 @@ MACHINE_KERNEL_PR:append = "2"
 SRC_URI[md5sum] = "4c8f204781ac5a4a83918d5527fbcab0"
 SRC_URI[sha256sum] = "ce63b433241890fc64df4a21c8fa0dea9d10c4f7100e47485cf687727c1f708d"
 
-LIC_FILES_CHKSUM = "file://${unpackdir}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
+LIC_FILES_CHKSUM = "file://${UNPACKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 SRC_URI += "http://downloads.openpli.org/archive/qviart/linux-4.4.35.tar.xz \
 	file://defconfig \
@@ -27,8 +27,8 @@ SRC_URI += "http://downloads.openpli.org/archive/qviart/linux-4.4.35.tar.xz \
 	file://fix-build-with-binutils-2.41.patch \
 	"
 
-S = "${unpackdir}/linux-${PV}"
-B = "${unpackdir}/build"
+S = "${UNPACKDIR}/linux-${PV}"
+B = "${UNPACKDIR}/build"
 
 export OS = "Linux"
 KERNEL_OBJECT_SUFFIX = "ko"
@@ -43,13 +43,13 @@ KERNEL_OUTPUT = "arch/${ARCH}/boot/${KERNEL_IMAGETYPE}"
 
 kernel_do_configure:prepend() {
 	install -d ${B}/usr
-	install -m 0644 ${unpackdir}/initramfs-subdirboot.cpio.gz ${B}/
+	install -m 0644 ${UNPACKDIR}/initramfs-subdirboot.cpio.gz ${B}/
 }
 
 kernel_do_install:append() {
 	install -d ${D}/${KERNEL_IMAGEDEST}
 	install -m 0755 ${KERNEL_OUTPUT} ${D}/${KERNEL_IMAGEDEST}
-	install -m 0755 ${unpackdir}/findkerneldevice.sh ${D}${KERNEL_IMAGEDEST}
+	install -m 0755 ${UNPACKDIR}/findkerneldevice.sh ${D}${KERNEL_IMAGEDEST}
 }
 
 pkg_postinst:kernel-image () {
