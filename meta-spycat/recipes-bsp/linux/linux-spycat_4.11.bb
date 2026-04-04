@@ -50,6 +50,7 @@ SRC_URI = "${KERNELORG_MIRROR}/linux/kernel/v4.x/linux-${PV}.tar.xz;name=kernel 
 	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
 	file://use-address-of-operator-on-section-symbols-gcc-12.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://port-to-c23.patch \
 	"
 
 COMPATIBLE_MACHINE = "spycat|spycatmini|spycatminiplus|spycat4kmini"
