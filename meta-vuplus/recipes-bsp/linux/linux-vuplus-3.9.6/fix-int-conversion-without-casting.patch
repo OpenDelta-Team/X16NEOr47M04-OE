@@ -52,7 +52,7 @@ index 97f202c9..415ff462 100644
  
  		e = search_extable(mod->extable,
 -				   mod->extable + mod->num_exentries,
-+				   (const unsigned int)mod->extable + mod->num_exentries - 1,
++				   (const unsigned int)mod->extable + mod->num_exentries,
  				   addr);
  		if (e)
  			break;
