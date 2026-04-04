@@ -27,6 +27,7 @@ SRC_URI = "http://downloads.openpli.org/archive/xsarius/linux-${KV}.tar.xz \
 	file://fix-linker-issue-undefined-reference.patch \
 	file://kernel-add-support-for-gcc15.patch \
 	file://port-to-c23.patch \
+	file://fix-int-conversion-without-casting.patch \
 	file://defconfig \
 	"
 

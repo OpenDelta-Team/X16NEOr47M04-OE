@@ -1,0 +1,26 @@
+diff --git a/kernel/extable.c b/kernel/extable.c
+index fe35a634..5401b494 100644
+--- a/kernel/extable.c
++++ b/kernel/extable.c
+@@ -52,7 +52,7 @@ const struct exception_table_entry *search_exception_tables(unsigned long addr)
+ {
+ 	const struct exception_table_entry *e;
+ 
+-	e = search_extable(__start___ex_table, __stop___ex_table-1, addr);
++	e = search_extable(__start___ex_table, (const unsigned int)__stop___ex_table-1, addr);
+ 	if (!e)
+ 		e = search_module_extables(addr);
+ 	return e;
+diff --git a/kernel/module.c b/kernel/module.c
+index 97f202c9..415ff462 100644
+--- a/kernel/module.c
++++ b/kernel/module.c
+@@ -3729,7 +3729,7 @@ const struct exception_table_entry *search_module_extables(unsigned long addr)
+ 			continue;
+ 
+ 		e = search_extable(mod->extable,
+-				   mod->extable + mod->num_exentries,
++				   (const unsigned int)mod->extable + mod->num_exentries,
+ 				   addr);
+ 		if (e)
+ 			break;
