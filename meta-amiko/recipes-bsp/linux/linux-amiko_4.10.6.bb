@@ -28,6 +28,7 @@ SRC_URI += "http://downloads.openpli.org/archive/amiko/yh625tc-linux-${PV}-base-
     file://fix-multiple-defs-yyloc.patch \
     file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
     file://fix-build-with-binutils-2.41.patch \
+    file://port-to-c23-kernel-4-10-6.patch \
     "
 
 inherit kernel machine_kernel_pr
