@@ -32,4 +32,6 @@ INHIBIT_PACKAGE_STRIP = "1"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+ERROR_QA:remove = "file-rdeps"
+
 INSANE_SKIP = "32bit-time ldflags"
