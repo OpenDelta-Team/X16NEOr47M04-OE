@@ -1,4 +1,0 @@
-FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
-
-PR .= ".1"
-PACKAGE_NO_LOCALE = "1"
