@@ -7,6 +7,7 @@ SRC_URI = "http://downloads.openpli.org/archive/edision/linux-edision-${PV}.tar.
 	file://0003-cp1emu-do-not-use-bools-for-arithmetic.patch \
 	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://port-to-c23-kernel-4-8-17.patch \
 	"
 
 COMPATIBLE_MACHINE = "osnino|osninoplus|osninopro"

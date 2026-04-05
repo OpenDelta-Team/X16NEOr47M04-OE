@@ -9,7 +9,7 @@ DEPENDS:append:aarch64 = " libgcc"
 KERNEL_CC:append:aarch64 = " ${TOOLCHAIN_OPTIONS}"
 KERNEL_LD:append:aarch64 = " ${TOOLCHAIN_OPTIONS}"
 
-KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS+=-Wno-attribute-alias EXTRA_CFLAGS+=-Wno-address EXTRA_CFLAGS+=-std=gnu17"
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS+=-Wno-attribute-alias EXTRA_CFLAGS+=-Wno-address"
 
 # Pick up shared functions
 inherit kernel
