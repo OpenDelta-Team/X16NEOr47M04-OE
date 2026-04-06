@@ -72,7 +72,7 @@ IMAGE_CMD:ubi:append = " \
 IMAGE_CMD:zgemmafastboot8gb:append = " \
 	mkdir -p ${IMGDEPLOYDIR}/${IMAGEDIR}/${MACHINE}; \
 	mkdir -p ${IMGDEPLOYDIR}/${IMAGEDIRRECOVERY}/${MACHINE}; \
-	bzip2 ${IMGDEPLOYDIR}/${IMAGE_NAME}.tar; \
+	bzip2 -k ${IMGDEPLOYDIR}/${IMAGE_NAME}.tar; \
 	cp ${DEPLOY_DIR_IMAGE}/uImage ${IMGDEPLOYDIR}/${IMAGEDIR}/${MACHINE}/uImage; \
 	cp ${IMGDEPLOYDIR}/${IMAGE_NAME}.tar.bz2 ${IMGDEPLOYDIR}/${IMAGEDIR}/${MACHINE}/rootfs.tar.bz2; \
 	echo "${IMAGEVERSION}" > ${IMGDEPLOYDIR}/${IMAGEDIR}/${MACHINE}/imageversion; \
