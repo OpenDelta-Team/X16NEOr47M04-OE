@@ -55,6 +55,7 @@ FILES:${PN}-meta = "${datadir}/meta"
 PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 
 DEPENDS = " \
+	bluealsa \
 	bluez5 \
 	btinit \
 	python3-pyopenssl \
