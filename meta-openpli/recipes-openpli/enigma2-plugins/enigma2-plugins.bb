@@ -56,6 +56,7 @@ PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 
 DEPENDS = " \
 	bluez5 \
+	bluez-alsa \
 	btinit \
 	python3-pyopenssl \
 	streamripper \
