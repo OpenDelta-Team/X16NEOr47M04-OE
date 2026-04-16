@@ -44,16 +44,16 @@ PACKAGECONFIG[deprecated] = "--enable-deprecated,--disable-deprecated"
 PACKAGECONFIG[mesh] = "--enable-mesh,--disable-mesh, json-c ell"
 PACKAGECONFIG[btpclient] = "--enable-btpclient,--disable-btpclient, ell"
 
-SRC_URI = "\
-    ${KERNELORG_MIRROR}/linux/bluetooth/bluez-${PV}.tar.xz \
-    file://out-of-tree.patch \
-    file://init \
-    file://main.conf \
-    file://run-ptest \
-    file://0001-tests-add-a-target-for-building-tests-without-runnin.patch \
-    file://0001-test-gatt-Fix-hung-issue.patch \
-    file://fix-build-with-glibc-2.34.patch \
-"
+SRC_URI = "${KERNELORG_MIRROR}/linux/bluetooth/bluez-${PV}.tar.xz \
+           file://init \
+           file://main.conf \
+           file://run-ptest \
+           file://0001-Allow-using-obexd-without-systemd-in-the-user-sessio.patch \
+           file://0001-tests-add-a-target-for-building-tests-without-runnin.patch \
+           file://0001-test-gatt-Fix-hung-issue.patch \
+           file://0001-audio-Rename-pause-funciton-to-avoid-shadowing-glibc.patch \
+           "
+
 S = "${UNPACKDIR}/bluez-${PV}"
 
 CVE_PRODUCT = "bluez"
@@ -64,6 +64,7 @@ EXTRA_OECONF = "\
   --enable-test \
   --enable-datafiles \
   --enable-library \
+  --without-zsh-completion-dir \
 "
 
 # bluez5 builds a large number of useful utilities but does not
