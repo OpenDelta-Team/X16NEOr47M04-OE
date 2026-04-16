@@ -12,11 +12,11 @@ PR = "r3"
 
 SRC_URI  = "file://${INITSCRIPT_NAME}"
 
-S = "${UNPACKDIR}"
+S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d
-    install -m 0755 ${UNPACKDIR}/${INITSCRIPT_NAME} ${D}${sysconfdir}/init.d/${INITSCRIPT_NAME}
+    install -m 0755 ${WORKDIR}/${INITSCRIPT_NAME} ${D}${sysconfdir}/init.d/${INITSCRIPT_NAME}
 }
 
 do_package_qa() {
