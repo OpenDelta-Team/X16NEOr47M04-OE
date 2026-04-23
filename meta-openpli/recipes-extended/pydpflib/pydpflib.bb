@@ -6,7 +6,7 @@ DEPENDS = "libusb-compat libusb1 python3"
 
 SRC_URI = "git://github.com/atvcaptain/dpf-ax.git;branch=dreamlayers;protocol=https \
            file://replace-py-ty-with-py--set-type.patch \
-           file://set-python-version-to-313.patch \
+           file://set-python-version-to-314.patch \
            file://fix-incompatible-pointer-type.patch \
            file://migrate-to-new-buffer-protocol.patch \
 "
