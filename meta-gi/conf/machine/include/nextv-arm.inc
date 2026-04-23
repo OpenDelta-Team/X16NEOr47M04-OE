@@ -11,7 +11,7 @@ require conf/machine/include/nextv-essential.inc
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
 # We know about rtc
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPTED_OUT = "rtc"
 
 IMAGE_INSTALL:append = "\
     nextv-initrd-${MACHINE} \

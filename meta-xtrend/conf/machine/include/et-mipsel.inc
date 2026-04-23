@@ -13,7 +13,7 @@ require conf/machine/include/et-essential.inc
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
 # We know about rtc
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPTED_OUT = "rtc"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	et-dvb-modules-${MACHINE} \

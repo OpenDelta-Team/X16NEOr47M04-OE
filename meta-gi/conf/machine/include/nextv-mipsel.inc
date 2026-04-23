@@ -12,7 +12,7 @@ DEFAULTTUNE ?= "mips32el"
 require conf/machine/include/mips/tune-mips32.inc
 
 # We know about rtc
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPTED_OUT = "rtc"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	nextv-dvb-modules-${MACHINE} \

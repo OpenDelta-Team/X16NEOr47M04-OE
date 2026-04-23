@@ -1,5 +1,5 @@
 # We know about rtc
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPTED_OUT = "rtc"
 
 include conf/machine/include/autoload-filesystems.inc
 

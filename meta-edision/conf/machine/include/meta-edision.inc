@@ -3,7 +3,7 @@
 #
 
 # We know about rtc
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPTED_OUT = "rtc"
 
 # recommended extra packages common to all edision machines
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS:append = " kernel-module-rt2800usb"

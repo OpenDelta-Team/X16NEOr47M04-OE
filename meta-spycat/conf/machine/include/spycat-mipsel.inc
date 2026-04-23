@@ -19,7 +19,7 @@ PREFERRED_PROVIDER_virtual/blindscan-dvbs = "os-blindscan-utils"
 PREFERRED_PROVIDER_virtual/blindscan-dvbc = "os-blindscan-utils"
 
 # We know about rtc
-MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
+MACHINE_FEATURES_OPTED_OUT = "rtc"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	spycat-dvb-modules-${MACHINE} \
