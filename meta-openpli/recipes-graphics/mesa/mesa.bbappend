@@ -21,7 +21,7 @@ do_install:append() {
     rm -f ${D}${libdir}/libGLESv2.so
 }
 
-PROVIDES:remove = "virtual/libgles1 virtual/libgles2 virtual/egl virtual/libgbm"
+PROVIDES:remove = "virtual/libgles1 virtual/libgles2 virtual/egl"
 PROVIDES += "virtual/egl-native virtual/nativesdk-egl"
 
 REQUIRED_DISTRO_FEATURES = ""
