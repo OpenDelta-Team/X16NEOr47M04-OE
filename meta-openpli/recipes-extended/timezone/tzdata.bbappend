@@ -1,7 +1,7 @@
 do_compile () {
         oe_runmake -C ${S} tzdata.zi
         for zone in ${TZONES}; do \
-            ${STAGING_BINDIR_NATIVE}/zic -d ${B}/zoneinfo -L /dev/null \
+            ${STAGING_BINDIR_NATIVE}/zic -b ${ZIC_FMT} -d ${B}/zoneinfo -L /dev/null ${S}/${zone}
                 -y ${S}/yearistype.sh ${S}/${zone} ; \
         done
 }
