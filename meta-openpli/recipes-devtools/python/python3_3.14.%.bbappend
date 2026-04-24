@@ -4,7 +4,6 @@ SRC_URI += "file://importlib.patch"
 inherit python3-dir
 
 FILES:${PN}-src += " \
-    ${libdir}/${PYTHON_DIR}/*.py \
     ${libdir}/${PYTHON_DIR}/*/*.py \
     ${libdir}/${PYTHON_DIR}/*/*/*.py \
     ${libdir}/${PYTHON_DIR}/*/*/*/*.py \
