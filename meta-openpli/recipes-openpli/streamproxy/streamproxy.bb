@@ -29,3 +29,5 @@ INITSCRIPT_NAME = "streamproxy.sh"
 INITSCRIPT_PARAMS = "defaults 30 70"
 
 inherit update-rc.d
+
+CXXFLAGS += "-Wno-error=unused-result"
