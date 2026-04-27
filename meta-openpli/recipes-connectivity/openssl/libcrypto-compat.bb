@@ -95,6 +95,8 @@ CFLAG += "-Wa,--noexecstack"
 
 CFLAG:append:class-native = " -fPIC"
 
+DISABLE_STATIC = ""
+
 do_configure () {
 	# The crypto_use_bigint patch means that perl's bignum module needs to be
 	# installed, but some distributions (for example Fedora 23) don't ship it by
